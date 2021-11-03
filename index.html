@@ -9,26 +9,46 @@
 <body>
     <main>
         <H1>Penny Flip Game</H1>
-        <div>
-            <div>Penny Image Display, Button Controls, and Status Message</div>
+            </div>
+            <div class='image-cont'>
+                    <img
+                    id='penny-image'
+                    src="assets\images\penny-heads.jpg"
+                    alt='penny'  
+                    />
+                </div>
+                <div class = 'controls'>
+                    <button id='flip'>
+                        Flip the Penny
+                    </button>
+                    <button id='clear'>
+                        Clear Scoreboard
+                    </button>
+                </div>
+            </div>
+            </main>
             <hr>
             <div>
                 <h2>Scoreboard</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Number of Heads</th>
+                            <th>Heads</th>
                             <th>Percentage Heads</th>
-                            <th>Number of Tails</th>
+                            <th>Tails</th>
                             <th>Percentage Tails</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <div class='container'>
+                                <div class='stats'>
                             <td id="heads">0</td>
                             <td id="heads-percent">0%</td>
                             <td id="tails">0</td>
                             <td id="tails-percent">0%</td>
+                            </div>
+                                </div>
                         </tr>
                     </tbody>
                 </table>
